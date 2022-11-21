@@ -774,8 +774,13 @@ Be sure to update your `README.md` file so that others know what happened in you
 
 ## **15. Map FASTQ to Reference Genome**
 
-Coming soon!
+Either Download your reference genome from NCBI (example given for [Salarias fasciatus] (https://github.com/philippinespire/pire_lcwgs_data_processing/blob/main/salarias_fasciatus/README.md)) or give the location of the reference genome (.fasta file) we assembled for probe development on ssl.
 
+```sh
+cd <yourPireDirPath>/pire_<ssl-or-cssl-or-lcwgs>_data_processing/<genus_species>
+#sbatch mkBAM.sbatch InFilePattern RefGenomeFile OutputDir
+sbatch ../../pire_fq_gz_processing/mkBAM.sbatch "fq_fp1_clmp_fp2_fqscrn_rprd/*fq.gz" "/home/e1garcia/shotgun_PIRE/pire_ssl_data_processing/sphaeramia_nematoptera/probe_design/Sne_scaffolds_allLibs_decontam_R1R2_noIsolate.fasta" mkBAM
+```
 ---
 
 </p>
@@ -787,7 +792,12 @@ Coming soon!
 
 ## **16. Filter BAM Files**
 
-Coming soon!
+
+```sh
+cd <yourPireDirPath>/pire_<ssl-or-cssl-or-lcwgs>_data_processing/<genus_species>
+#sbatch fltrBAM.sbatch OutputDir
+sbatch ../../pire_fq_gz_processing/fltrBAM.sbatch mkBAM
+```
 
 ---
 
