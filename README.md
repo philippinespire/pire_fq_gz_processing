@@ -330,7 +330,7 @@ __Do NOT use `_` in the LibraryID. *The only `_` should be separating `PopSample
 
 Examples of compatible names:
 
-  * `Sne-CTaw_051-Ex1-3F-cssl-L4` = *Sphaeramia nematoptera* (Sne), contemporary (C) from Tawi-Tawi (Taw), indv 051, extraction 1, loc 3F on plate, capture lib, loc L4 (lane 4)
+  * `Sne-CTaw_051-Ex1-3F-cssl` = *Sphaeramia nematoptera* (Sne), contemporary (C) from Tawi-Tawi (Taw), indv 051, extraction 1, loc 3F on plate, capture lib
 
 Here are some other QC checks on the downloaded data and the decode files:
 
