@@ -30,7 +30,7 @@ sbatch --array=0-$((${#all_samples[@]}-1))%${nodes} \
 	--nodes=1 \
 	--ntasks=1 \
 	--cpus-per-task="${threads}" \
-	--mem="${ramPerThread^^}" \
+	--mem=0 \
 	--exclusive \
 	${SCRIPTPATH}/runCLUMPIFY_r1r2_array3.sbatch \
 		${INDIR} \
