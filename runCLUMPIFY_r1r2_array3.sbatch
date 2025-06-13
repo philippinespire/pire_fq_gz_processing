@@ -8,7 +8,6 @@
 #SBATCH --nodes=1
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=40
-#SBATCH --mem=${5^^}      # 360G comes in from wrapper
 #SBATCH --exclusive       # absolutely nobody else on the node
 
 enable_lmod
