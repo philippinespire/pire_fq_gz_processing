@@ -3,8 +3,6 @@
 #!/bin/bash -l
 #SBATCH --job-name=clmp_r12
 #SBATCH --output=clmp_r1r2_%A_%a.out
-#SBATCH --partition=${SLURM_SUBMIT_PARTITION:-main}
-
 #SBATCH --nodes=1
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=40
